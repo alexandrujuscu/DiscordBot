@@ -128,5 +128,5 @@ async def on_raw_reaction_remove(event):
     except:
         pass
         #print('Couldn\'t remove reaction')
-
-CLIENT.run('ODc3NzE4NjkyMDk4NjIxNDQx.YR2tOw.kWD5R27L4kobEA91UbL3EOyNKVc')
+with open(AUTH_FILE, 'r') as auth:
+    CLIENT.run(auth.read())
